@@ -11,8 +11,6 @@
     font-family: Sct3;
     src: url(../fonts/SctoGroteskA-Bold.woff2);
 }
- /* #f4f4f4 / #252422 / #f9cdcd */
- /* css for Work */
 #work-header{
     display: flex;
     justify-content: space-between;
@@ -176,7 +174,7 @@ width: 25px;
 }
 .aside-sec-main > div:nth-of-type(2) > h2{
     font-family: Sct1;
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 .aside-sec-main > div:nth-of-type(2) > a{
     color: #f9cdcd;
@@ -251,15 +249,6 @@ body{
 .index-nav-menu > img {
     width: 1.8%;
 }
-/* .index-nav-menu > span{
-    display: none;
-    color: #252422;
-    text-shadow: 0px 0px 10px rgb(255, 255, 255);
-    font-size: 3em;
-    position: fixed;
-    left: 85%;
-    top: 10vh;
-} */
 #hamburgerMenu{
     display: none;
     color: #252422;
@@ -358,6 +347,12 @@ body{
     grid-template-columns: repeat(5,1fr);
     grid-gap: 5%;
     padding-bottom: 15vh;
+}
+.index-sec-FEATUREDENGAGEMENTS > article > div > img{
+width: 200px;
+height: 40px;
+padding: 0;
+margin: 0;
 }
 .index-sec-FEATUREDENGAGEMENTS > article > div > h1{
     font-size: 3em;
@@ -551,20 +546,6 @@ margin-bottom: 2vh;
     text-decoration: underline;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* css for about */
 .about-body{
     padding: 0;
@@ -616,6 +597,9 @@ margin-bottom: 2vh;
     margin-bottom: 0vh;
     border-top: 1px solid #f9cdcd;
     border-bottom: 1px solid #f9cdcd;
+}
+.about-sec-gallery > span{
+    display: none;
 }
 .about-sec-gallery > h4{
     color: #f9cdcd;
@@ -845,8 +829,6 @@ margin-bottom: 40vh;
 .about-footer-terms > span:nth-of-type(3) > a{
     color:#252422  ;
 }
-
-
 /* css for news */
 .news-header{
     padding-top: 10vh;
@@ -1001,11 +983,26 @@ justify-content: space-between;
 body{
     background-color: #f4f4f4;
 }
-
-
-
-
 @media only screen and (max-width: 586px) {
+    .aside-sec-main{
+        padding: 5vh 0%;
+        color: #f9cdcd;
+        display: flex;
+        width:250px;
+    }
+    .vL{
+        padding: 30vh 0;
+    }
+    .aside-sec-main > div:nth-of-type(2) > img{
+        height: 30vh;
+    }
+    .aside-sec-main > div:nth-of-type(2) > h1{
+        font-size: 2em;
+    }
+    .aside-sec-main > div:nth-of-type(2) > p{
+        display: block;
+        font-size: 1.4em;
+    }
     .about-header{
     display: block;
     }
@@ -1032,6 +1029,7 @@ body{
         width: 100%;
     }
     .about-sec-gallery >span{
+        display: inline;
         font-size: 5em;
         margin: 50px;
         color: #f9cdcd;
